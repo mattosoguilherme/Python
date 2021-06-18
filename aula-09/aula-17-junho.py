@@ -46,13 +46,23 @@ print('-='*30)
 # números entre 1 e 60 para cada jogo, cadastrando tudo em uma lista composta.
 print()
 
-from random import randint,choice
-ppt=int(input('digite quantos papilte:'))
-std=list()
-for s in range(0, ppt):
+# from random import randint,choice
+# ppt=int(input('digite quantos papilte:'))
+# std=list()
+# for s in range(0, ppt):
    
-    for n in range(0,6):
-        num=randint(1,60)
-        std.append(num)
-print(std)
+#     for n in range(0,6):
+#         num=randint(1,60)
+#         std.append(num)
+# print(std)
 
+from random import sample
+quantJogos = int(input('Quantos jogos você quer gerar? '))
+todosJogos = []
+for i in range(quantJogos):
+    jogo = (sample(range(1,60), 6))
+    if jogo.sort() not in todosJogos:
+        todosJogos.append(jogo)
+print('\nSeus jogos são:')
+for a in range(quantJogos):
+     print(todosJogos[a]) 
