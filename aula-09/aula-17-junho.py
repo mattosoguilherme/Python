@@ -69,9 +69,5 @@ for c in range(quant):
 print(f"\n----------{quant} jogos sendo sorteados----------")
 print()
 for l,e in enumerate(jogos):
-    print(f"O {l}º jogo sorteado foi: {jogos}")
+    print(f"O {l+1}º jogo sorteado foi: {e}")
     sleep(1)
-
-
-
-
