@@ -34,7 +34,7 @@
 #  .pop() apaga uma posição específico dentro de uma lista, se estiver sem parâmetro ele apaga a ultima posição da lista 
 #   .sort() | faz a mesma coisa que o sorted, coloca em ordem crescente
 #   .reverse()| faz o inverso do sorted 
-#  del
+#  del.clear() | limpa uma lista
 
 # Exercicios de Lista:
 
