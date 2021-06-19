@@ -74,6 +74,7 @@ if guerreiro in "JO,KEN,PO":
                print('empate')
                empates+=1
           sleep(1)
+print()
 print(f'empates{empates}')
 print(f'ganhou {rodadas_ganhas}')
 print(f'perdeu {rodadas_peridas}')
