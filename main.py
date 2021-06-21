@@ -69,17 +69,17 @@
 # entre 3 e 4 como "Cúmplice" e 5 como "Assassino". 
 # Caso contrário, ele será classificado como "Inocente".
 
-dtv=[input("Telefonou para a vítima?[S/N]\n").strip().capitalize()[0],input("Esteve no local do crime?[S/N]\n").strip().capitalize()[0], input("Mora perto da vítima?[S/N]\n").strip().capitalize()[0],input("Devia para a vítima?[S/N]\n").strip().capitalize()[0],input("Já trabalhou com a vítima?[S/N]\n").strip().capitalize()[0]]
-ponto=0
-for c in dtv:
-    if c == 'S':
-        ponto+=1
+# dtv=[input("Telefonou para a vítima?[S/N]\n").strip().capitalize()[0],input("Esteve no local do crime?[S/N]\n").strip().capitalize()[0], input("Mora perto da vítima?[S/N]\n").strip().capitalize()[0],input("Devia para a vítima?[S/N]\n").strip().capitalize()[0],input("Já trabalhou com a vítima?[S/N]\n").strip().capitalize()[0]]
+# ponto=0
+# for c in dtv:
+#     if c == 'S':
+#         ponto+=1
    
-if ponto <=1:
-    print("\nvc é inocente")
-elif ponto == 2:
-    print("\nvc é suspeito")
-elif ponto==3 or ponto==4:
-    print("\nvc é cumplice")
-elif ponto==5:
-    print("\nvc é culpado")
+# if ponto <=1:
+#     print("\nvc é inocente")
+# elif ponto == 2:
+#     print("\nvc é suspeito")
+# elif ponto==3 or ponto==4:
+#     print("\nvc é cumplice")
+# elif ponto==5:
+#     print("\nvc é culpado")
