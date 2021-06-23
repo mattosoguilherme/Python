@@ -39,7 +39,7 @@ for i in pessoas:
 acima=list()
 for a in pessoas:
     if a['idade']>media:
-        acima.append(a['nome','idade'])
+        acima.append(a['idade'])
 
 print("-"*30 )
 
@@ -48,6 +48,7 @@ print(f"A média da idade dessas pessoas é {media} anos. ")
 print(f"Existem {len(Mulheres)} na lista, são elas:",end=" ")
 for t in Mulheres:
     print(t, end=',')
+print(f"\nIdades acima da média são:{acima}.")
 
 
 
