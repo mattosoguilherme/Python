@@ -44,3 +44,4 @@ for k,v in enumerate(alunos):
 if len(media_notas)>1:
     print(f'A média de nota geral: {calculadorMedia(sum(media_notas),qtd_alunos)}')
 print(f'Maior nota da turma: {max(media_notas)}')
+linhas()
