@@ -6,4 +6,5 @@ def linha():
 # Opcionalmente, valide a data e retorne NULL caso a data seja inválida. Considere que
 # Fevereiro tem 28 dias e que a cada 4 anos temos ano bisexto, sendo que nesses casos Fevereiro
 # terá 29 dias.
-linha()
+def extensor(ano):
+ 
