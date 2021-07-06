@@ -3,6 +3,8 @@
 # escolher o objeto a ser lançado. Não esqueça que os lançamentos são
 # feitos de forma randômica.
 from random import randint
+from os import system
+
 
 class Launcher:
    
@@ -22,7 +24,7 @@ class Launcher:
    
 
 Launcher(input("qual objeto você quer jogar? [dado ou moeda] "))
-    
+system('clear')
 # Vamos aprimorar o código: cadastro de jogador de futebol.py que foi
 # desenvolvido no Code Lab da aula 14. Faça com que o seu código
 # funcione para vários jogadores, incluindo um sistema de visualização de
@@ -34,24 +36,31 @@ Launcher(input("qual objeto você quer jogar? [dado ou moeda] "))
 # dicionário, incluindo o total de gols feitos durante o campeonato.
 
 class Player:
-    def __init__(self,name,team,match):
-        self.list_player_library = list()    
+    def __init__(self,name,team,match):   
         self.player_library=dict()
-        self.player_library["namePlayer"] = name
-        self.player_library["nameTeam"] = team
-        self.player_library["number_match"] = match 
-        self.list_player_library.append(self.player_library.copy())
+        self.player_library["Player"] = name
+        self.player_library["Team"] = team
+        self.player_library["number_match"] = match     
         self.all_goals = list()
         for count in range(match):
-            self.number_goals = input(f"Quantos gols {name} fez nessa {count+1}º partida?\n ")  
+            self.number_goals = int(input(f"Quantos gols {name} fez nessa {count+1}º partida?\n "))
             self.all_goals.append(self.number_goals)
-   
-    def players_income():
-        pass
 
+    def players_income(self):
+        print('-- PLAYER INCOME --')
+        for keys, values in self.player_library.items():
+            print(f"{keys}: {values}")
+        all = sum(self.all_goals)
+        average = all / self.player_library["number_match"]
+        print(f"Total of goals: {all}")
+        print(f"Average goals per game: {average}")
 
-print()
-Player(input("Qual o nome do jogador?\n").capitalize(),
-input("Qual o time?\n").capitalize(),
-int(input("Quantas partidas jogou?\n"))
-)
+while True:
+    athlete = Player(input("Qual o nome do jogador?\n").capitalize(),
+    input("Qual o time?\n").capitalize(),
+    int(input("Quantas partidas jogou?\n"))
+    )
+    system('clear')
+
+    athlete.players_income()
+    question = input('')
